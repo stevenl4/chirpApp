@@ -56,6 +56,7 @@ app.config(function($routeProvider){
 });
 
 app.controller('mainController', function($rootScope, $scope, postFactory){
+    $scope.postLimit = 30;
     $scope.posts = postFactory.query();
     $scope.newPost = {created_by: '', text: '', created_at: ''};
 

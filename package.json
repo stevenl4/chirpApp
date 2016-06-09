@@ -1,5 +1,5 @@
 {
-  "name": "chirpApp",
+  "name": "1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -18,5 +18,18 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenl4/chirpApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenl4/chirpApp/issues"
+  },
+  "homepage": "https://github.com/stevenl4/chirpApp#readme"
 }

@@ -6,9 +6,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test-chirp');
+
 require('./models/models.js');
+var mongoose = require('mongoose');
+if(process.env.DEV_ENV){
+    console.log('we\'re in developement!');
+    mongoose.connect('mongodb://localhost:27017/test-chirp');
+}
+else{
+    console.log('we\'re live!');
+    mongoose.connect('mongodb://admin:admin@ds023213.mlab.com:23213/chirp-demo');
+}
+
+
 
 var app = express();
 
